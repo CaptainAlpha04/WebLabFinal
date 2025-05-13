@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-50 min-h-screen font-sans;
+  }
+  h1 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+  h2 {
+    @apply text-2xl font-semibold text-gray-700;
+  }
+  h3 {
+    @apply text-xl font-medium text-gray-700;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-md transition-all;
+  }
+  .card-hover {
+    @apply hover:shadow-lg hover:scale-[1.02] transition-all;
+  }
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  .btn-primary {
+    @apply bg-gray-800 text-white hover:bg-gray-700;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+  }
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400;
+  }
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+}
+
